@@ -34,10 +34,13 @@ public class ArrayListEx {
 
         System.out.println(array.get(0));
 
+        array.add("애벌레");
+        array.add("파뿌리");
+
         Iterator<String> iterator = array.iterator();
-        while (iterator.hasNext()) {
-            String str1 = iterator.next();
-            if (str1.equals("애벌레")) iterator.remove();
+        while (iterator.hasNext()) { //객체가 있는지 확인
+            String str1 = iterator.next(); //다음에 올 객체 읽어오기
+            if (str1.equals("파뿌리")) iterator.remove(); // 읽어온 객체가 "애벌레" 라면 삭제
         }
         System.out.println("=====================================");
 
