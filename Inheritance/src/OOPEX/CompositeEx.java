@@ -3,7 +3,7 @@ package OOPEX;
 public class CompositeEx {
     public static void main(String[] args) {
         Country p1 = new Country("서울", "한국");
-        Person person = new Person("애버리", 26, p1);
+        Person1 person = new Person1("애버리", 26, p1);
 
         person.showInfo();
     }
@@ -20,13 +20,13 @@ class Country{
     }
 }
 
-class Person{
+class Person1{
     String name;
     int age;
     Country p1;
 
-    Person(){}
-    Person(String name, int age, Country p1){
+    Person1(){}
+    Person1(String name, int age, Country p1){
         this.name = name;
         this.age = age;
         this.p1 = p1;
